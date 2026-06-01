@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Apart Lab · DFM&A Analysis · Antony Saleh</title>
+  <meta name="description" content="EDES 350 Take Apart Lab : a DFM&amp;A analysis of four pairs of jeans sourced from Les Sales Voleurs, Paris.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav">
+    <a href="#top" class="nav__brand">Back to Top</a>
+    <ul class="nav__links">
+      <li><a href="#failures">Failures</a></li>
+      <li><a href="#items">Items</a></li>
+      <li><a href="#deconstruction">Deconstruction</a></li>
+      <li><a href="#analysis">Analysis</a></li>
+      <li><a href="#bom">BOM</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       HERO  (OUTFIT-style: giant headline + hairline + 4-col metadata)
+       ============================================================ -->
+  <header class="hero" id="top">
+    <h1 class="hero__title">DFM<span class="hero__title-amp">&amp;</span>A<sup>®</sup></h1>
+    <div class="hero__subtitle">Analysis</div>
+    <hr class="hero__rule">
+    <div class="hero__meta">
+      <div class="hero__meta-block">
+        <span class="label">Project</span>
+        <span class="value">Take Apart Lab. A DFM&amp;A analysis of four pairs of jeans sourced for less than five euros each.</span>
+      </div>
+      <div class="hero__meta-block">
+        <span class="label">Sourced at</span>
+        <span class="value">Les Sales Voleurs second-hand stores, Paris.</span>
+      </div>
+      <div class="hero__meta-block">
+        <span class="label">© 2026</span>
+        <span class="value">Antony Saleh, EDES 350, Rice University.</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero image strip: 4 Items introduced visually -->
+  <section class="hero__images">
+    <figure><img src="assets/hero/01_stradivarius_cover.jpg" alt="Stradivarius 1400 Skinny" loading="lazy"></figure>
+    <figure><img src="assets/hero/02_tex_cover.jpg" alt="TEX Carrefour Navy Light" loading="lazy"></figure>
+    <figure><img src="assets/hero/03_sonnybono_cover.jpg" alt="Sonnybono Dorntrendy" loading="lazy"></figure>
+    <figure><img src="assets/hero/04_nyk_cover.jpg" alt="NYK Italian denim skirt" loading="lazy"></figure>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1 · INTRODUCTION
+       ============================================================ -->
+  <section class="section" id="intro">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter One</div>
+        <h2 class="section__title">An <em>introduction</em> to my choice.</h2>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">01</div>
+      </div>
+    </div>
+
+    <div class="prose reveal">
+      <p>
+        The take apart lab assignment, had us go to Les Sales Voleurs second-hand stores, Paris.
+        We were instructed to pick 4 pairs of garment and analyze its make up,
+        structure and different DFM&A choices. 
+        
+      </p>
+      <p>I chose Denim since I have long been
+        interested in the style of Jeans, especially with the recent style shift
+        from skinny jeans to baggier and baggier, I've also personally had my own style shift
+        similarly in terms of what Jeans I wear, thus I decided that I want to learn some more 
+        about how Jeans are made, what type of manufacturing underlines the process of
+        making them, and how do companies cut costs especially now that baggy jeans
+        require more fabric, minimizing potential profits.
+      </p>
+      <p>
+        I must mention that this is a very small sample size, from a shop with a very specific set of items,
+        all these items are second hand, some would considered them outdated in terms of
+         the fashion sense begind them furthermore they are vert cheap, as so is the budget, 
+         in this lab I will be comparing construction complexity and country of
+        origin and how that could change with the original price.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 · TEN DOCUMENTED FAILURES
+       ============================================================ -->
+  <section class="section" id="failures">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Two</div>
+        <h2 class="section__title">Ten <em>failures</em> I could find.</h2>
+        <p class="section__lede">
+          I documented common failures across different Jeans.
+          This is the evidence of how
+          denim breaks down after years of using.
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">02</div>
+      </div>
+    </div>
+
+    <div class="failure-grid reveal-stagger">
+
+      <article class="failure">
+        <div class="failure__num">01</div>
+        <div class="failure__img"><img src="assets/failures/20260521_102124.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Seam</div>
+        <h3 class="failure__title">Crotch seam opening</h3>
+        <p class="failure__body">The crotch seam has some loose endsof string, right at the intersection where the inseam meets the rise. This could lead to the stitching giving way and loosening.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">02</div>
+        <div class="failure__img"><img src="assets/failures/20260521_102152.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Fabric</div>
+        <h3 class="failure__title">Inner thigh friction wear</h3>
+        <p class="failure__body">The denim itself has worn through in the middle of the panel between the legs. The fraying pattern is consistent with the inner thighs rubbing against each other while walking.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">03</div>
+        <div class="failure__img"><img src="assets/failures/20260531_143822.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Hem</div>
+        <h3 class="failure__title">Bottom hem unraveling</h3>
+        <p class="failure__body">The hem stitching at the bottom of the leg has started to rip, opening the cuff and letting the lighter interior fabric pull through.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">04</div>
+        <div class="failure__img"><img src="assets/failures/20260531_144100.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Seam</div>
+        <h3 class="failure__title">Inseam hole, frayed thread</h3>
+        <p class="failure__body">A small hole has opened along the inseam, with orange topstitching thread frayed and trailing out of the gap. The denim around it is still intact, so a stitch failure would likely precede any fabric wear.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">05</div>
+        <div class="failure__img"><img src="assets/failures/20260531_220954.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Hardware</div>
+        <h3 class="failure__title">Branded button, paint loss</h3>
+        <p class="failure__body">The Sonnybono branded shank button has lost most of its black paint, exposing the bare metal underneath. The thread securing it has also bunched around the shank rather than sitting flush due to it being pulled many times.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">06</div>
+        <div class="failure__img"><img src="assets/failures/20260531_221036.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Waistband</div>
+        <h3 class="failure__title">Worn-through stud anchor</h3>
+        <p class="failure__body">The fabric around a small metal stud on the waistband has worn away. It is still intact but the threads are starting to come apart.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">07</div>
+        <div class="failure__img"><img src="assets/failures/20260531_221356.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Seam</div>
+        <h3 class="failure__title">Skirt seam splitting apart</h3>
+        <p class="failure__body">The two denim panels of the NYK skirt are visibly ripping away from each other along the front seam, enlargining the vertical gap from the waistband down. </p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">08</div>
+        <div class="failure__img"><img src="assets/failures/20260531_221900.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Hardware</div>
+        <h3 class="failure__title">Button threads coming loose</h3>
+        <p class="failure__body">The threads holding the button to the skirt are coming undone, with loose strands visible around the shank.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">09</div>
+        <div class="failure__img"><img src="assets/failures/20260531_222026.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Label</div>
+        <h3 class="failure__title">Sonnybono leather patch torn</h3>
+        <p class="failure__body">The leather back patch on the Sonnybono waistband has torn loose at its bottom edge and is curling away from the denim. The leather itself is cracked and peeling, with the stitching at the corner pulled out entirely.</p>
+      </article>
+
+      <article class="failure">
+        <div class="failure__num">10</div>
+        <div class="failure__img"><img src="assets/failures/20260531_222140.jpg" alt="" loading="lazy"></div>
+        <div class="failure__label">Dye</div>
+        <h3 class="failure__title">Pocket shadow revealed after removal</h3>
+        <p class="failure__body">Once the back pocket was removed during deconstruction, a darker rectangular shadow appeared. The pocket protected the denim underneath so the shadow is a record of how much the rest of the panel actually faded with use, on top of whatever factory wash the garment came with.</p>
+      </article>
+
+    </div>
+
+    <p class="pullquote reveal">
+      Every failure was due to a decision made years before, to maybe cut costs or increase effeciency.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 · THE FOUR PURCHASED ITEMS
+       ============================================================ -->
+  <section class="section" id="items">
+    <div class="opener opener--centered reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Three</div>
+        <h2 class="section__title">The Four Chosen <em>Jeans</em>.</h2>
+        <p class="section__lede">
+          This is an overview of each selected pair compairing their category, country
+          of origin, material qualities and construction
+          complexity. Trying to focus on the things that affect
+          matter for a DFM&A.
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">03</div>
+      </div>
+    </div>
+
+    <figure class="full full--first reveal">
+      <img src="assets/items/four_jeans_in_paris.jpg" alt="The four pairs of jeans laid across green chairs and a stone bench in a Paris park">
+      <figcaption>The four specimens, in a Paris park, the morning we started</figcaption>
+    </figure>
+
+    <article class="item reveal">
+      <div class="item__media"><img src="assets/items/01_stradivarius_portrait.jpg" alt="Stradivarius 1400 Skinny full length" loading="lazy"></div>
+      <div class="item__body">
+        <div class="item__index">Specimen · 01</div>
+        <h3 class="item__name">Stradivarius 1400 Skinny</h3>
+        <p class="item__brand">Inditex group, Barcelona</p>
+        <ul class="item__specs">
+          <li><span class="k">Type</span><span class="v">Women's jeans, skinny fit, regular rise</span></li>
+          <li><span class="k">Origin</span><span class="v">Made in Cambodia</span></li>
+          <li><span class="k">Fiber</span><span class="v">90% cotton · 8% elastomultiester · 2% elastane</span></li>
+          <li><span class="k">Color</span><span class="v">Dark blue</span></li>
+          <li><span class="k">Pockets</span><span class="v">Functional, two small front and two back</span></li>
+          <li><span class="k">Size</span><span class="v">EU 44 / US 12 / UK 16 (women's dress sizing)</span></li>
+          <li><span class="k">Price tier</span><span class="v">Mid fast fashion</span></li>
+          <li><span class="k">Code</span><span class="v">Style 1400</span></li>
+        </ul>
+        <p>
+          The most complex piece of the set. As stated, it has Elastomultiester which is a
+          bicomponent stretch fiber (T400 family). It is used to allow for good shape recovery
+          for a lower budget than spandex. Cambodia production points
+          to a high-volume contract factory shared across Inditex brands. The biggest
+          DFM aspect isthe cost-engineered stretch built for scale.
+        </p>
+      </div>
+    </article>
+
+    <article class="item reveal">
+      <div class="item__media"><img src="assets/items/02_tex_portrait.jpg" alt="TEX Carrefour Navy Light jeans" loading="lazy"></div>
+      <div class="item__body">
+        <div class="item__index">Specimen · 02</div>
+        <h3 class="item__name">TEX Navy Light Wash</h3>
+        <p class="item__brand">Carrefour private label</p>
+        <ul class="item__specs">
+          <li><span class="k">Type</span><span class="v">Women's jeans, skinny fit, regular rise</span></li>
+          <li><span class="k">Origin</span><span class="v">Made in Cambodia</span></li>
+          <li><span class="k">Fiber</span><span class="v">66% cotton · 32% polyester · 2% elastane</span></li>
+          <li><span class="k">Color</span><span class="v">Navy light wash</span></li>
+          <li><span class="k">Pockets</span><span class="v">Fake front pockets, functional back pockets</span></li>
+          <li><span class="k">Size</span><span class="v">S (generic S/M/L sizing)</span></li>
+          <li><span class="k">Price tier</span><span class="v">Budget fast fashion, grocery store tier</span></li>
+          <li><span class="k">Code</span><span class="v">Barcode 3616181432690</span></li>
+        </ul>
+        <p>
+          The most extreme example of minmise costs in the set. From what I researched, Thirty-two
+          percent polyester in denim is unusually high and is the single largest
+          material cost cut available. This is becasue polyester is dramatically cheaper
+          than cotton. The fake front pockets eliminate two pocket bag pieces
+          and the stitching labor that goes with them, saving a fraction of a
+          euro. Which may seem small but this stacks across tens of thousands of pairs.
+        </p>
+      </div>
+    </article>
+
+    <article class="item reveal">
+      <div class="item__media"><img src="assets/items/03_sonnybono_portrait.jpg" alt="Sonnybono Dorntrendy jeans" loading="lazy"></div>
+      <div class="item__body">
+        <div class="item__index">Specimen · 03</div>
+        <h3 class="item__name">Sonnybono Dorntrendy</h3>
+        <p class="item__brand">Italian budget menswear label</p>
+        <ul class="item__specs">
+          <li><span class="k">Type</span><span class="v">Men's jeans, regular fit, straight leg</span></li>
+          <li><span class="k">Origin</span><span class="v">Made in Pakistan</span></li>
+          <li><span class="k">Fiber</span><span class="v">100% cotton (label) vs. 98% cotton / 2% elastane (current online listing)</span></li>
+          <li><span class="k">Color</span><span class="v">Nero (black), color code C1199</span></li>
+          <li><span class="k">Pockets</span><span class="v">Functional, two large front and two back</span></li>
+          <li><span class="k">Size</span><span class="v">EU 52 (Italian men's suit sizing)</span></li>
+          <li><span class="k">Price tier</span><span class="v">Budget fast fashion</span></li>
+          <li><span class="k">Code</span><span class="v">2000021148079</span></li>
+        </ul>
+        <p>
+          Italian-branded but Pakistan-manufactured. Interestingly, The physical label says 100% cotton but
+          but when I looked it up, the current online listing for this exact color code shows 98% cotton
+          and 2% elastane, I am unsure as to the reason for this descrepency, it could be simply
+          that this is an older version of the pants.
+        </p>
+      </div>
+    </article>
+
+    <article class="item reveal">
+      <div class="item__media"><img src="assets/items/04_nyk_portrait.jpg" alt="NYK Italian denim skirt" loading="lazy"></div>
+      <div class="item__body">
+        <div class="item__index">Specimen · 04</div>
+        <h3 class="item__name">NYK Denim Skirt</h3>
+        <p class="item__brand">Small Italian label, brand not traceable online</p>
+        <ul class="item__specs">
+          <li><span class="k">Type</span><span class="v">Denim skirt (not jeans)</span></li>
+          <li><span class="k">Origin</span><span class="v">Made in Italy</span></li>
+          <li><span class="k">Fiber</span><span class="v">100% cotton</span></li>
+          <li><span class="k">Color</span><span class="v">Dark blue</span></li>
+          <li><span class="k">Pockets</span><span class="v">Two small functional front pockets</span></li>
+          <li><span class="k">Size</span><span class="v">Unknown</span></li>
+          <li><span class="k">Price tier</span><span class="v">High fast fashion (Italian origin)</span></li>
+          <li><span class="k">Code</span><span class="v">REF TX S4345 · ART F1J0 · I 0100613 (Italian fiscal identifier)</span></li>
+        </ul>
+        <p>
+          The outlier of the set. Made in Italy
+          with 100% cotton and a simpler skirt silhouette (no rear
+          pockets, fewer pattern pieces). While searching online for this skirt,
+          I could not find it, it seems that the brand left no digital trace, which I beleive
+          is due to a long tail of small Italian denim mills that maybe
+          predate online retail and never had a website or an online listing.
+        </p>
+      </div>
+    </article>
+
+
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 · DECONSTRUCTION
+       ============================================================ -->
+  <section class="section" id="deconstruction">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Four</div>
+        <h2 class="section__title">The <em>deconstruction</em>, step by step.</h2>
+        <p class="section__lede">
+          I took two of the four pairs apart completely. This is a highlight of the process,
+          the results and the tools used (Picture on the right).
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__image">
+          <img src="assets/decon/00_tools.jpg" alt="The two tools used for the deconstruction: thread snips and a precision blade" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO PARALLEL DECONSTRUCTION SEQUENCES (one per pair) -->
+
+    <article class="decon-pair reveal">
+      <div class="decon-pair__header">
+        <div class="decon-pair__index">Specimen 01</div>
+        <h3 class="decon-pair__name">Stradivarius 1400 Skinny</h3>
+      </div>
+
+      <div class="decon-grid reveal-stagger">
+        <div class="decon-step">
+          <div class="decon-step__num">01</div>
+          <div class="decon-step__img"><img src="assets/decon/strad_01_outseam.jpg" alt="Hand holding the outseam of the Stradivarius jeans" loading="lazy"></div>
+          <div class="decon-step__label">Hem</div>
+          <h4 class="decon-step__title">Dismantle the bottom hem</h4>
+          <p class="decon-step__body">First step in the deconstruction. Open the chain-stitched hem at the cuff of each leg to free the bottom edge of the denim before any side seams are touched.</p>
+        </div>
+        <div class="decon-step">
+          <div class="decon-step__num">02</div>
+          <div class="decon-step__img"><img src="assets/decon/strad_02_waistband.jpg" alt="Inside of the waistband peeled open, light blue pocket bag visible" loading="lazy"></div>
+          <div class="decon-step__label">Outseam</div>
+          <h4 class="decon-step__title">Remove the outseam</h4>
+          <p class="decon-step__body">Slice the outer side seam from hem to waistband. The gold flat-felled topstitching is the first to come apart, exposing the raw cut edge of the denim underneath.</p>
+        </div>
+        <div class="decon-step">
+          <div class="decon-step__num">03</div>
+          <div class="decon-step__img"><img src="assets/decon/strad_03_inseam.jpg" alt="Inseam of the jeans split open, frayed orange topstitching" loading="lazy"></div>
+          <div class="decon-step__label">Inseam</div>
+          <h4 class="decon-step__title">Remove the inseam</h4>
+          <p class="decon-step__body">Open the inner leg seam from hem to crotch. The orange topstitching frays out as the front panel separates from the back along both legs.</p>
+        </div>
+        <div class="decon-step">
+          <div class="decon-step__num">04</div>
+          <div class="decon-step__img"><img src="assets/decon/strad_04_fly.jpg" alt="Close-up of the gold zipper and fly facing pulled open" loading="lazy"></div>
+          <div class="decon-step__label">Fly</div>
+          <h4 class="decon-step__title">Remove the fly</h4>
+          <p class="decon-step__body">Detach the zipper and fly facing from the front panel. The gold zipper teeth come away with their tape still intact, attached to the fly piece.</p>
+        </div>
+        <div class="decon-step">
+          <div class="decon-step__num">05</div>
+          <div class="decon-step__img"><img src="assets/decon/strad_05_pockets.jpg" alt="The Stradivarius laid out with the back pocket removed and placed beside it" loading="lazy"></div>
+          <div class="decon-step__label">Pockets</div>
+          <h4 class="decon-step__title">Remove the pockets</h4>
+          <p class="decon-step__body">Unpick the back pocket topstitching and lay it next to the body. The lighter rectangle of denim underneath shows where it had been sewn for years.</p>
+        </div>
+      </div>
+
+      <figure class="decon-pair__final">
+        <img src="assets/decon/strad_final_exploded.jpg" alt="Stradivarius 1400 fully deconstructed: waistband strip across the top, body and panels laid out below">
+        <figcaption>Stradivarius 1400, every component</figcaption>
+      </figure>
+    </article>
+
+    <article class="decon-pair reveal">
+      <div class="decon-pair__header">
+        <div class="decon-pair__index">Specimen 02</div>
+        <h3 class="decon-pair__name">TEX Carrefour Navy Light</h3>
+      </div>
+
+      <p class="decon-pair__note reveal">
+        A similar process was followed for the second pair. Hem first, then
+        outseam, inseam, fly, and pockets, with the same tools and the same
+        order. Rather than repeat the step-by-step, what follows is just the
+        final result once everything had come apart.
+      </p>
+
+      <figure class="decon-pair__final">
+        <img src="assets/decon/tex_final_exploded.jpg" alt="TEX Carrefour Navy Light fully deconstructed: waistband strip and fly facing across the top, front and back panels laid out below">
+        <figcaption>TEX Carrefour, every component</figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 · MANUFACTURING PROCESSES IDENTIFIED
+       ============================================================ -->
+  <section class="section" id="manufacturing">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Five</div>
+        <h2 class="section__title">The <em>processes</em> hiding in the seams.</h2>
+        <p class="section__lede">
+          Every garment is a record of the machinery that made it and so it is possible
+          to find out a lot of information about how something was made just by looking at
+          the seams, the stitch density, the hardware and the weave.
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">05</div>
+      </div>
+    </div>
+
+    <h3 class="prose-heading reveal">Stitches likely used in almost all jeans</h3>
+    <div class="stitch-table-wrap reveal">
+      <table class="stitch-table">
+        <colgroup>
+          <col class="col-type">
+          <col class="col-ref">
+          <col class="col-looks">
+          <col class="col-machine">
+          <col class="col-tells">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Stitch type</th>
+            <th>Reference</th>
+            <th>What it looks like</th>
+            <th>Machine used</th>
+            <th>What it tells you</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-type"><strong>Lockstitch (301)</strong></td>
+            <td><div class="stitch-thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Lockstitch.gif" alt="Lockstitch ISO 301 thread diagram" loading="lazy"></div></td>
+            <td>Same on both sides, tight, doesn't unravel if cut</td>
+            <td>Single needle lockstitch machine</td>
+            <td class="col-tells">Standard construction</td>
+          </tr>
+          <tr>
+            <td class="col-type"><strong>Chain stitch (401)</strong></td>
+            <td><div class="stitch-thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Chainstitch1.gif" alt="Chain stitch ISO 401 thread diagram" loading="lazy"></div></td>
+            <td>Loopy on the back, ravels if pulled</td>
+            <td>Chain stitch machine</td>
+            <td class="col-tells">Classic denim, faster to sew</td>
+          </tr>
+          <tr>
+            <td class="col-type"><strong>Overlock / Serger (504/505)</strong></td>
+            <td><div class="stitch-thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Overlock_trzynitkowy.SVG" alt="Overlock ISO 504 thread diagram" loading="lazy"></div></td>
+            <td>Wrapped edge, 3 to 5 threads</td>
+            <td>Overlock machine</td>
+            <td class="col-tells">Used to finish raw edges</td>
+          </tr>
+          <tr>
+            <td class="col-type"><strong>Flatlock / Coverstitch (406)</strong></td>
+            <td><div class="stitch-thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Coverstitch-example.jpg" alt="Coverstitch ISO 406 example photo" loading="lazy"></div></td>
+            <td>Two rows on the face, loopy on the back</td>
+            <td>Coverstitch machine</td>
+            <td class="col-tells">Used on waistbands and hems</td>
+          </tr>
+          <tr>
+            <td class="col-type"><strong>Bartack</strong></td>
+            <td><div class="stitch-thumb"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Bartacks_%28cropped%29.jpg" alt="Bartack stitch example photo" loading="lazy"></div></td>
+            <td>Dense zigzag block stitch</td>
+            <td>Bartack machine</td>
+            <td class="col-tells">Reinforces stress points</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="stitch-table__credit">Stitch diagrams and photos via Wikimedia Commons.</p>
+    </div>
+
+    <h3 class="prose-heading reveal">Some of the same stitches, found in my jeans</h3>
+
+    <div class="gallery gallery--three reveal-stagger">
+      <figure>
+        <div class="aspect-45"><img src="assets/manufacturing/stitches_real/lockstitch_pocket_topstitch.jpg" alt="Orange lockstitch topstitching on a back pocket" loading="lazy"></div>
+        <figcaption>Lockstitch &mdash; back pocket topstitching</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-45"><img src="assets/manufacturing/stitches_real/overlock_raw_edge.jpg" alt="Wrapped overlock stitch along a raw inseam edge" loading="lazy"></div>
+        <figcaption>Overlock &mdash; finishing the raw seam edge</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-45"><img src="assets/manufacturing/stitches_real/bartack_pocket_corner.jpg" alt="Dense bartack reinforcement at the top corner of a coin pocket" loading="lazy"></div>
+        <figcaption>Bartack &mdash; reinforcing the pocket corner</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="prose-heading reveal">The DFM&amp;A story across all four</h3>
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <colgroup>
+          <col class="col-process">
+          <col class="col-item">
+          <col class="col-item">
+          <col class="col-item">
+          <col class="col-item">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Process</th>
+            <th>Stradivarius</th>
+            <th>TEX</th>
+            <th>Sonnybono</th>
+            <th>NYK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-process"><strong>Seam type</strong></td>
+            <td>Overlock</td>
+            <td>Overlock</td>
+            <td>Flat-felled likely</td>
+            <td>Flat-felled likely</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Zipper</strong></td>
+            <td>Plastic / basic metal</td>
+            <td>No zipper</td>
+            <td>Metal</td>
+            <td>Metal</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Pocket bags</strong></td>
+            <td>Polyester lining</td>
+            <td>Non-existent (fake pockets)</td>
+            <td>Cotton</td>
+            <td>Cotton</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Bartacks</strong></td>
+            <td>Present (Inditex standard)</td>
+            <td>Minimal</td>
+            <td>Present</td>
+            <td>Present</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Hem stitch</strong></td>
+            <td>Lockstitch</td>
+            <td>Lockstitch</td>
+            <td>Chain stitch</td>
+            <td>Chain stitch</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Operations per unit</strong></td>
+            <td>~35&ndash;40</td>
+            <td>~25&ndash;30</td>
+            <td>~35&ndash;40</td>
+            <td>~30&ndash;35 (skirt, simpler)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       SECTION 6 · DFM ANALYSIS
+       ============================================================ -->
+  <section class="section" id="analysis">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Six</div>
+        <h2 class="section__title">DFM analysis : <em>what was cheapened</em>, what was kept.</h2>
+              </div>
+      <div class="opener__right">
+        <div class="opener__numeral">06</div>
+      </div>
+    </div>
+
+<!-- The 4 levers of DFM -->
+    <h3 class="prose-heading reveal">The DFM lens of my garments</h3>
+    <div class="prose reveal">
+      <p>
+        In garment manufacturing, it is clear that cost is controlled through four main levers.
+        Every item in this set shows a different combination of them being controlled.
+      </p>
+    </div>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table compare-table--levers">
+        <colgroup>
+          <col class="col-process">
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Lever</th>
+            <th>How it is controlled</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-process"><strong>Material</strong></td>
+            <td>Cheaper fiber blend, thinner yarn, less fabric.</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Labor</strong></td>
+            <td>Fewer sewing operations, simpler pattern pieces.</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Time</strong></td>
+            <td>Faster machines, skipped finishing steps.</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Quality control</strong></td>
+            <td>Fewer checks, higher accepted defect tolerance.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Item-by-item DFM analysis -->
+
+    <article class="dfm-item reveal">
+<h3 class="prose-heading reveal">Item by item analysis</h3>
+      <div class="dfm-item__header">
+        <div class="dfm-item__index">Item 01</div>
+        <h4 class="dfm-item__name">Stradivarius</h4>
+        <p class="dfm-item__tagline">Accounting for both cheapness and performance.</p>
+      </div>
+      <div class="dfm-item__cols">
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--good">Well designed</h5>
+          <ul class="dfm-list">
+            <li>Elastomultiester (T400-type fiber) is smarter than plain elastane. It recovers better over time and does not degrade as quickly with washing.</li>
+            <li>Inditex (Company which owns brands like Zara) supply chain is highly optimised. Cambodia factories running Stradivarius product are typically well-managed with consistent quality.</li>
+            <li>The skinny fit requires precise pattern grading, thus there is complexity in the design.</li>
+          </ul>
+        </div>
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--cut">Cheapened</h5>
+          <ul class="dfm-list">
+            <li>Cotton is really expensive, so the 90% cotton with 10% elastomultiester reduces the most expensive raw material.</li>
+            <li>Cambodia manufacturing chosen entirely for labor cost, not proximity or quality.</li>
+                        <li>No performance claims despite the elastomultiester. This shows that the choice of using elastomultiester was not to add a feature but rather save money.</li>
+          </ul>
+        </div>
+      </div>
+          </article>
+
+    <article class="dfm-item reveal">
+      <div class="dfm-item__header">
+        <div class="dfm-item__index">Item 02</div>
+        <h4 class="dfm-item__name">TEX Carrefour</h4>
+        <p class="dfm-item__tagline">Prioritize cheapness over everytihng else!</p>
+      </div>
+      <div class="dfm-item__cols">
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--good">Well designed</h5>
+          <ul class="dfm-list">
+            <li>For design decisions, the most notable feature is that the fake pockets which are topstitched. This is an aesthetic addition.</li>
+            <li>The 2% elastane gives basic stretch, this helps with fit especially due to standard sizing.</li>
+            <li>The carefibr.it EU traceability (which I found on the label) is a compliance requirement.</li>
+          </ul>
+        </div>
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--cut">Cheapened</h5>
+          <ul class="dfm-list">
+            <li>32% polyester. Cotton costs roughly 3 to 4 times more per kg than polyester. A third of the cotton content is replaced which shows a huge raw material cost saving.</li>
+            <li>Fake front pockets, reducing two pocket bag cut pieces, two pocket bag sewing operations, the pocket stay stitching, the pocket opening finishing, and roughly 4 to 6 minutes of labor per unit.</li>
+            <li>No zipper.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="dfm-item reveal">
+      <div class="dfm-item__header">
+        <div class="dfm-item__index">Item 03</div>
+        <h4 class="dfm-item__name">Sonnybono</h4>
+        <p class="dfm-item__tagline">Less focus on fast fashion, more on quality.</p>
+      </div>
+      <div class="dfm-item__cols">
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--good">Well designed</h5>
+          <ul class="dfm-list">
+            <li>Since it is made from 100% cotton without any synthetic substitution, this increases costs.</li>
+            <li>Regular fit is a forgiving pattern which fits a wider range of bodies, reducing waste.</li>
+            <li>Pakistan manufacturing since Pakistan grows cotton, mills it, and sews it. This keeps the supply chain short and the cotton quality consistent.</li>
+            <li>The weight of the denim is heavier which allows for high wear and tear durability.</li>
+          </ul>
+        </div>
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--cut">Cheapened</h5>
+          <ul class="dfm-list">
+            <li>No elastanem even though adding as little as 2% would increase comfort and would be quite cheap, but the decision not to add it is still a cost cut.</li>
+            <li>"Italian brand, Pakistan made" is itself a DFM decision. Charging extra for the Italian brand association.</li>
+            <li>There is a composition discrepancy (label says 100% cotton, online listing says 98% cotton / 2% elastane) suggests lack of consistent BOM control.</li>
+          </ul>
+        </div>
+      </div>
+          </article>
+
+    <article class="dfm-item reveal">
+      <div class="dfm-item__header">
+        <div class="dfm-item__index">Item 04</div>
+        <h4 class="dfm-item__name">NYK Italy</h4>
+        <p class="dfm-item__tagline">Unoptimisated manufacturing, but higher quality.</p>
+      </div>
+      <div class="dfm-item__cols">
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--good">Well designed</h5>
+          <ul class="dfm-list">
+            <li>This is made of 100% cotton in Italy which is from the pre-offshoring era, made of ring-spun yarn, shuttle loom weaving, and rope dyeing.</li>
+            <li>Skirt pattern is DFM-friendly as it has fewer pattern pieces, fewer operations and even less waste.</li>
+            <li>The button and rivets are solid metal.</li>
+            <li>The skirt pattern is basically only two panels, allowing for extremely efficient cutting with minimal fabric waste.</li>
+          </ul>
+        </div>
+        <div class="dfm-item__col">
+          <h5 class="dfm-item__sub dfm-item__sub--cut">Cheapened</h5>
+          <ul class="dfm-list">
+            <li>The obscurity (could not find it online) of the NYK brand suggests it was never a premium label. Maybe a wholesale brand for mid-market Italian retailers.</li>
+          </ul>
+        </div>
+      </div>
+          </article>
+
+<!-- Cross-item comparison -->
+    <h3 class="prose-heading reveal">Cross-item DFM comparison</h3>
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <colgroup>
+          <col class="col-process">
+          <col class="col-item">
+          <col class="col-item">
+          <col class="col-item">
+          <col class="col-item">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>DFM factor</th>
+            <th>Stradivarius</th>
+            <th>TEX</th>
+            <th>Sonnybono</th>
+            <th>NYK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-process"><strong>Material</strong></td>
+            <td>High (elastomultiester)</td>
+            <td>Low (high polyester)</td>
+            <td>Medium (Cotton)</td>
+            <td>High (Italian cotton)</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Labor optimisation</strong></td>
+            <td>Medium</td>
+            <td>Maximum</td>
+            <td>Low</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Pattern complexity</strong></td>
+            <td>Medium</td>
+            <td>Low (fake pockets)</td>
+            <td>Medium</td>
+            <td>Low (skirt)</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>Construction quality</strong></td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>Medium</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>My perceived value</strong></td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>High</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>DFM sophistication</strong></td>
+            <td>High</td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>N/A (pre-DFM era?)</td>
+          </tr>
+          <tr>
+            <td class="col-process"><strong>User-centred decisions</strong></td>
+            <td>Few</td>
+            <td>Very few</td>
+            <td>Some</td>
+            <td>Some to many</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7 · KEY INSIGHTS & RECOMMENDATIONS
+       ============================================================ -->
+  <section class="section" id="insights">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Seven</div>
+        <h2 class="section__title">If I were to <em>redesign</em>.</h2>
+        <p class="section__lede">
+          Across all four items, the biggest gains come from upgrading the material used and not possible faking functional feature (Like pockets).
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">07</div>
+      </div>
+    </div>
+
+    <div class="recs">
+
+      <article class="rec reveal">
+        <div class="rec__header">
+          <div class="rec__index">Item 01</div>
+          <h3 class="rec__name">Stradivarius</h3>
+        </div>
+        <p class="rec__body">
+          Keep the elastomultiester, but upgrade the pocket bag fabric polyester
+          to a material like cotton. Total added cost is roughly &euro;0.15.
+                  </p>
+      </article>
+
+      <article class="rec reveal">
+        <div class="rec__header">
+          <div class="rec__index">Item 02</div>
+          <h3 class="rec__name">TEX Carrefour</h3>
+        </div>
+        <p class="rec__body">
+          Either make the front pockets real or remove the topstitched fake
+          opening entirely. A fake pocket that looks real gives the user a sense of 
+          diasppointement. Furthermore, the polyester could be reduced from 32% to 15% at max, the           difference
+          would be highly noticeable, and cotton prices at Carrefour's
+          volume are small per unit.
+        </p>
+      </article>
+
+      <article class="rec reveal">
+        <div class="rec__header">
+          <div class="rec__index">Item 03</div>
+          <h3 class="rec__name">Sonnybono</h3>
+        </div>
+        <p class="rec__body">
+          It is a viable option to add 2% elastane. Since it costs very little at production scale,
+but it           dramatically improves comfort and fit. Furthermore, It would eliminate the stiffness
+          that makes these jeans feel cheap. Also,
+          fix the BOM inconsistency between production runs, if the fabric spec
+          changes, the label itself must change too.
+        </p>
+      </article>
+
+      <article class="rec reveal">
+        <div class="rec__header">
+          <div class="rec__index">Item 04</div>
+          <h3 class="rec__name">NYK Italy</h3>
+        </div>
+        <p class="rec__body">
+          Increase thread strength as some of it is tearing, additional costs would be very small.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8 . BILL OF MATERIALS (Stradivarius)
+       ============================================================ -->
+  <section class="section" id="bom">
+    <div class="opener reveal">
+      <div class="opener__left">
+        <div class="section__num">Chapter Eight</div>
+        <h2 class="section__title">A <em>bill of materials</em> for a production run of one thousand.</h2>
+        <p class="section__lede">
+          A complete sourcing breakdown for the Stradivarius 1400 Skinny,
+          the cleverest pair in the set, at a production run of 1,000 units.
+          Every component is tied to a real vendor and a real price band.
+        </p>
+      </div>
+      <div class="opener__right">
+        <div class="opener__numeral">08</div>
+      </div>
+    </div>
+
+    <div class="bom-v2-wrap reveal">
+      <table class="bom-v2">
+        <colgroup>
+          <col class="bv-part">
+          <col class="bv-spec">
+          <col class="bv-qty">
+          <col class="bv-vendor">
+          <col class="bv-partno">
+          <col class="bv-price">
+          <col class="bv-moq">
+          <col class="bv-lead">
+          <col class="bv-notes">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Part name + function</th>
+            <th>Spec</th>
+            <th>Qty / unit</th>
+            <th>Vendor + link</th>
+            <th>Part no. / SKU</th>
+            <th>Price @ 1k</th>
+            <th>Minimum Order Quantity</th>
+            <th>Lead time</th>
+            <th>Sourcing notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bom-section"><td colspan="9">Piece goods</td></tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Shell fabric, indigo stretch denim</strong>
+              <span class="bom-fn">Main garment body. 90 / 8 / 2 blend confirmed from label.</span>
+            </td>
+            <td class="bom-spec">90% cotton, 8% elastomultiester (LYCRA T400), 2% elastane, indigo rope-dyed, 9 to 10oz, 3x1 twill, 58" wide</td>
+            <td class="bom-qty">1.3 m</td>
+            <td class="bom-vendor">
+              <a href="https://calikdenim.com" target="_blank" rel="noopener">Calik Denim</a>
+              <span class="bom-vloc">Turkish denim mill</span>
+            </td>
+            <td class="bom-partno">Stretch indigo, T400, 9 to 10oz<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$3.65 to $5.20</td>
+            <td class="bom-moq">500 m</td>
+            <td class="bom-lead">6 to 8 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Quote required</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Pocket bag fabric</strong>
+              <span class="bom-fn">Front</span>
+            </td>
+            <td class="bom-spec">100% cotton drill, 4 to 5oz, natural white, 60" wide</td>
+            <td class="bom-qty">0.5 m</td>
+            <td class="bom-vendor">
+              <a href="https://apparel-x.com" target="_blank" rel="noopener">ApparelX B2B</a>
+              <span class="bom-vloc">B2B marketplace</span>
+            </td>
+            <td class="bom-partno">Cotton drill pocket lining<br><span class="bom-vloc">Search on ApparelX</span></td>
+            <td class="bom-price">~$0.35 to $0.50</td>
+            <td class="bom-moq">200 m</td>
+            <td class="bom-lead">3 to 4 wks</td>
+            <td class="bom-notes">
+              Skinny fit uses a bit less fabric than a regular fit.
+            </td>
+          </tr>
+          <tr class="bom-section"><td colspan="9">Hardware and fasteners</td></tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Tack button</strong>
+              <span class="bom-fn">Waistband closure, one per garment</span>
+            </td>
+            <td class="bom-spec">17 mm, zinc alloy + brass tack pin, antique brass or gunmetal finish, Duramark feed-through compatible</td>
+            <td class="bom-qty">1 pc</td>
+            <td class="bom-vendor">
+              <a href="https://scovill.com" target="_blank" rel="noopener">Scovill Fasteners</a>
+              <span class="bom-vloc">OEM supplier</span>
+            </td>
+            <td class="bom-partno">Scovill Duramark Tack Button<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$0.06 to $0.10</td>
+            <td class="bom-moq">1,000 pc</td>
+            <td class="bom-lead">4 to 6 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Quote required</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Copper rivets</strong>
+              <span class="bom-fn">Pocket stress points; confirmed in photo</span>
+            </td>
+            <td class="bom-spec">9 mm dome head, copper finish, two-part cap + post</td>
+            <td class="bom-qty">6 pc</td>
+            <td class="bom-vendor">
+              <a href="https://scovill.com" target="_blank" rel="noopener">Scovill Fasteners</a>
+              <span class="bom-vloc">OEM supplier</span>
+            </td>
+            <td class="bom-partno">Scovill Jean Rivets<br><span class="bom-vloc">6,000 pc for 1,000 units</span></td>
+            <td class="bom-price">~$0.36</td>
+            <td class="bom-moq">5,000 pc</td>
+            <td class="bom-lead">4 to 6 wks</td>
+            <td class="bom-notes">
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Metal zipper, fly</strong>
+              <span class="bom-fn">Fly closure</span>
+            </td>
+            <td class="bom-spec">YKK #5, brass closed-end, 6" (15 cm), antique brass, flat locking pull, black polyester tape</td>
+            <td class="bom-qty">1 pc</td>
+            <td class="bom-vendor">
+              <a href="https://ykkfastening.com" target="_blank" rel="noopener">YKK Fastening</a>
+              <span class="bom-vloc">OEM direct</span>
+            </td>
+            <td class="bom-partno">YKK #5 Brass Closed-End<br><span class="bom-vloc">Cambodia office</span></td>
+            <td class="bom-price">~$0.40 to $0.60</td>
+            <td class="bom-moq">500 pc</td>
+            <td class="bom-lead">3 to 5 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Confirmed metal</span>
+              YKK is the default Inditex zipper. They have an office in Cambodia, so no importing needed.
+            </td>
+          </tr>
+          <tr class="bom-section"><td colspan="9">Thread</td></tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Topstitch thread, gold contrast</strong>
+              <span class="bom-fn">Decorative + structural; gold confirmed in photo</span>
+            </td>
+            <td class="bom-spec">Coats Epic Tkt 80 / Tex 40, polyester corespun, tan-gold, 5,000 m cone</td>
+            <td class="bom-qty">~80 m</td>
+            <td class="bom-vendor">
+              <a href="https://coats.com" target="_blank" rel="noopener">Coats Group</a>
+              <span class="bom-vloc">Thread OEM</span>
+            </td>
+            <td class="bom-partno">Coats Epic Tkt 80, tan / gold<br><span class="bom-vloc">17 cones for 1,000 units</span></td>
+            <td class="bom-price">~$0.04 to $0.06</td>
+            <td class="bom-moq">1 cone</td>
+            <td class="bom-lead">2 to 3 wks</td>
+            <td class="bom-notes">
+              Coats is the standard thread brand for these factories. They can supply locally.
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Seam + overlock thread, blue / black</strong>
+              <span class="bom-fn">Structural seam stitching throughout</span>
+            </td>
+            <td class="bom-spec">Coats Epic Tkt 120 / Tex 30, polyester corespun, dark indigo or black, 5,000 m cone</td>
+            <td class="bom-qty">~150 m</td>
+            <td class="bom-vendor">
+              <a href="https://coats.com" target="_blank" rel="noopener">Coats Group</a>
+              <span class="bom-vloc">Thread OEM</span>
+            </td>
+            <td class="bom-partno">Coats Epic Tkt 120, dark indigo / black<br><span class="bom-vloc">31 cones for 1,000 units</span></td>
+            <td class="bom-price">~$0.05 to $0.07</td>
+            <td class="bom-moq">1 cone</td>
+            <td class="bom-lead">2 to 3 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Standard</span>
+              Dark thread to match the indigo.
+            </td>
+          </tr>
+          <tr class="bom-section"><td colspan="9">Interlining</td></tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Waistband interlining</strong>
+              <span class="bom-fn">Prevents rolling, provides structure</span>
+            </td>
+            <td class="bom-spec">Freudenberg Vilene MS-Tape, fusible perforated nonwoven, 38 mm wide, black, medium weight</td>
+            <td class="bom-qty">0.15 m</td>
+            <td class="bom-vendor">
+              <a href="https://freudenberg-pm.com" target="_blank" rel="noopener">Freudenberg PM</a>
+              <span class="bom-vloc">Interlining OEM</span>
+            </td>
+            <td class="bom-partno">Freudenberg Vilene MS-Tape<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$0.08 to $0.15</td>
+            <td class="bom-moq">50 m roll</td>
+            <td class="bom-lead">4 to 5 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Quote required</span>
+            </td>
+          </tr>
+          <tr class="bom-section"><td colspan="9">Labels and packaging</td></tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Woven brand + size labels</strong>
+              <span class="bom-fn">Stradivarius branding + EU 44 size; woven confirmed in photo</span>
+            </td>
+            <td class="bom-spec">Jacquard woven, ~50 x 30 mm brand + ~30 x 15 mm size label, Stradivarius branding, centrefold</td>
+            <td class="bom-qty">2 pc</td>
+            <td class="bom-vendor">
+              <a href="https://smlgroup.com" target="_blank" rel="noopener">SML Group</a>
+              <span class="bom-vloc">Label OEM</span>
+            </td>
+            <td class="bom-partno">Custom woven label set<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$0.05 to $0.10</td>
+            <td class="bom-moq">1,000 pc</td>
+            <td class="bom-lead">3 to 4 wks</td>
+            <td class="bom-notes">
+              <span class="bom-notes__flag">Confirmed woven</span>
+              SML is one of the label suppliers Inditex actually approves. Safe choice.
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Care + content label</strong>
+              <span class="bom-fn">EU fibre regulation compliance</span>
+            </td>
+            <td class="bom-spec">Printed satin / taffeta, EU Reg 1007/2011, min 2 languages, 90% cotton / 8% elastomultiester / 2% elastane stated</td>
+            <td class="bom-qty">1 pc</td>
+            <td class="bom-vendor">
+              <a href="https://averydennison.com" target="_blank" rel="noopener">Avery Dennison</a>
+              <span class="bom-vloc">Label OEM</span>
+            </td>
+            <td class="bom-partno">Custom printed care label<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$0.02 to $0.04</td>
+            <td class="bom-moq">1,000 pc</td>
+            <td class="bom-lead">2 to 3 wks</td>
+            <td class="bom-notes">
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Faux leather back patch</strong>
+              <span class="bom-fn">Brand waistband patch; tan / orange confirmed in photo</span>
+            </td>
+            <td class="bom-spec">PU faux leather, ~60 x 40 mm, embossed Stradivarius logo, tan, sewn attachment</td>
+            <td class="bom-qty">1 pc</td>
+            <td class="bom-vendor">
+              <a href="https://trimcogroup.com" target="_blank" rel="noopener">Trimco Group</a>
+              <span class="bom-vloc">Trim OEM</span>
+            </td>
+            <td class="bom-partno">Custom embossed PU patch<br><span class="bom-vloc">Quote required</span></td>
+            <td class="bom-price">~$0.05 to $0.08</td>
+            <td class="bom-moq">500 pc</td>
+            <td class="bom-lead">4 to 5 wks</td>
+            <td class="bom-notes">
+              Real leather would add about $0.20 per pair.
+            </td>
+          </tr>
+          <tr>
+            <td class="bom-part">
+              <strong>Hangtag + barcode + polybag</strong>
+              <span class="bom-fn">Retail display, scanning, packaging</span>
+            </td>
+            <td class="bom-spec">Printed card hangtag + PP barcode sticker (style 1400) + LDPE polybag 40 x 55 cm, self-seal</td>
+            <td class="bom-qty">1 set</td>
+            <td class="bom-vendor">
+              <a href="https://averydennison.com" target="_blank" rel="noopener">Avery Dennison + local polybag</a>
+              <span class="bom-vloc">Consolidate vendors</span>
+            </td>
+            <td class="bom-partno">Hangtag + barcode (Avery), polybag (local)<br><span class="bom-vloc">Custom</span></td>
+            <td class="bom-price">~$0.05 to $0.08</td>
+            <td class="bom-moq">1,000 set</td>
+            <td class="bom-lead">2 to 3 wks</td>
+            <td class="bom-notes">
+            </td>
+          </tr>
+          <tr class="bom-v2__total">
+            <td colspan="5"><strong>Total estimated material cost per unit @ 1,000 units</strong><br><span class="bom-v2__totalsub">Shell fabric is roughly 60 to 65% of the total. Excludes: cutting and sewing labour (~$2 to $4 per unit in Cambodia), factory overhead, finishing, QC, freight, duties.</span></td>
+            <td colspan="4" class="bom-v2__totalprice">~$5.15 to $7.25 USD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div>
+      <div class="footer__sig">Antony Saleh · EDES 350 · 2026</div>
+    </div>
+    <div>
+      Design inspired by
+      <a href="https://jacquesmariemage.com/" target="_blank" rel="noopener">Jacques Marie Mage</a>,
+      <a href="https://www.margotpriolet.com/" target="_blank" rel="noopener">Margot Priolet</a>,
+      and ++hellohello.
+    </div>
+    <div>
+      Rice University · Oshman Engineering Design Kitchen
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
