@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Take Apart Lab · DFM&A Analysis · Antony Saleh</title>
   <meta name="description" content="EDES 350 Take Apart Lab : a DFM&amp;A analysis of four pairs of jeans sourced from Les Sales Voleurs, Paris.">
+
+  <!-- Preconnect to font CDNs early so the typography paints with the layout -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload the four hero strip images so they arrive with the first paint
+       instead of waiting for the CSS-driven request. -->
+  <link rel="preload" as="image" href="assets/hero/01_stradivarius_cover.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero/02_tex_cover.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero/03_sonnybono_cover.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero/04_nyk_cover.jpg" fetchpriority="high">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -48,10 +60,10 @@
 
   <!-- Hero image strip: 4 Items introduced visually -->
   <section class="hero__images">
-    <figure><img src="assets/hero/01_stradivarius_cover.jpg" alt="Stradivarius 1400 Skinny" loading="lazy"></figure>
-    <figure><img src="assets/hero/02_tex_cover.jpg" alt="TEX Carrefour Navy Light" loading="lazy"></figure>
-    <figure><img src="assets/hero/03_sonnybono_cover.jpg" alt="Sonnybono Dorntrendy" loading="lazy"></figure>
-    <figure><img src="assets/hero/04_nyk_cover.jpg" alt="NYK Italian denim skirt" loading="lazy"></figure>
+    <figure><img src="assets/hero/01_stradivarius_cover.jpg" alt="Stradivarius 1400 Skinny" fetchpriority="high" decoding="async"></figure>
+    <figure><img src="assets/hero/02_tex_cover.jpg" alt="TEX Carrefour Navy Light" fetchpriority="high" decoding="async"></figure>
+    <figure><img src="assets/hero/03_sonnybono_cover.jpg" alt="Sonnybono Dorntrendy" fetchpriority="high" decoding="async"></figure>
+    <figure><img src="assets/hero/04_nyk_cover.jpg" alt="NYK Italian denim skirt" fetchpriority="high" decoding="async"></figure>
   </section>
 
   <!-- ============================================================
