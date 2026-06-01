@@ -1080,37 +1080,37 @@ body {
    Wide, dense industrial sourcing table. Horizontal scroll on narrow widths
    since collapsing this many columns to one phone column would be illegible. */
 .bom-v2-wrap {
-  margin: 0 calc(-1 * var(--pad-x)) 64px;
-  padding: 0 var(--pad-x);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  margin: 0 0 64px;
+  padding: 0;
 }
 .bom-v2 {
   width: 100%;
-  min-width: 1500px;
   border-collapse: collapse;
   font-family: var(--sans);
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.55;
   color: var(--ink);
   table-layout: fixed;
 }
-.bom-v2 col.bv-part   { width: 200px; }
-.bom-v2 col.bv-spec   { width: 240px; }
-.bom-v2 col.bv-qty    { width: 100px; }
-.bom-v2 col.bv-vendor { width: 160px; }
-.bom-v2 col.bv-partno { width: 220px; }
-.bom-v2 col.bv-price  { width: 200px; }
-.bom-v2 col.bv-moq    { width: 110px; }
-.bom-v2 col.bv-lead   { width: 110px; }
-.bom-v2 col.bv-notes  { width: 280px; }
+/* Proportional widths so the whole table fits the viewport. */
+.bom-v2 col.bv-part   { width: 13%; }
+.bom-v2 col.bv-spec   { width: 14%; }
+.bom-v2 col.bv-qty    { width: 6%; }
+.bom-v2 col.bv-vendor { width: 10%; }
+.bom-v2 col.bv-partno { width: 12%; }
+.bom-v2 col.bv-price  { width: 11%; }
+.bom-v2 col.bv-moq    { width: 7%; }
+.bom-v2 col.bv-lead   { width: 8%; }
+.bom-v2 col.bv-notes  { width: 19%; }
 
 .bom-v2 th,
 .bom-v2 td {
-  padding: 16px 14px;
+  padding: 14px 10px;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
 }
 .bom-v2 th {
   font-size: 13px;
@@ -1218,9 +1218,8 @@ body {
 
 /* MOQ + lead */
 .bom-v2 td.bom-moq, .bom-v2 td.bom-lead {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--ink-soft);
-  white-space: nowrap;
 }
 
 /* Notes column: small flag + body */
