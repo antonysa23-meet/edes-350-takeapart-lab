@@ -25,7 +25,7 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
-  document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => reveal.observe(el));
+  document.querySelectorAll('.reveal, .reveal-stagger, .bom-v2 tr.bom-section').forEach((el) => reveal.observe(el));
 
   // ----- Image fade-in on decode -----
   // Skip hero strip images: they have their own dedicated entrance animation
